@@ -1,0 +1,306 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cv__container {
+  background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+
+  font-size: 11px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cv {
+  background: white;
+  width: 55vw;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: table;
+  margin: 0 auto;
+
+  -webkit-animation: DownInCV 0.4s ease-out;
+  animation: DownInCV 0.4s ease-out;
+}
+
+@keyframes DownInCV {
+  from {
+    margin-top: -2000px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+.cv__content-wrapper,
+.cv__content-wrapper--experience {
+  padding: 15px;
+}
+
+.cv__content-wrapper--experience {
+  padding-left: 5px;
+}
+
+.cv__left-col {
+  background: white;
+  width: 25%;
+  height: 100%;
+  box-sizing: border-box;
+
+  float: left;
+}
+
+.cv__left-col__main-info__avatar {
+  width: 100%;
+  height: 120px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv__left-col__main-info__avatar img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.cv__left-col__personal-info__profile {
+  font-size: 10px;
+}
+
+.cv__left-col__personality ul,
+.cv__left-col__soft-skills ul {
+  line-height: 22px;
+  list-style: none;
+  padding: 10px;
+  padding-top: 12px;
+}
+
+.cv__left-col__personality li,
+.cv__left-col__soft-skills li {
+  display: inline-block;
+  padding: 1px 6px;
+  margin: 3px 3px 3px 0;
+  background: #e6e6e6;
+  font-size: 9.5px;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.cv__left-col__personality li:hover,
+.cv__left-col__soft-skills li:hover {
+  background: #f2c97e;
+}
+
+.cv__fullname {
+  letter-spacing: 2px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.cv__applied-position {
+  text-align: center;
+}
+
+.cv__school-name {
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: white;
+}
+
+.cv__content-icon {
+  margin-right: 7px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.cv__content-label {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 10px;
+}
+
+.cv__content-title--left,
+.cv__content-title--right {
+  border-left: 4px solid orange;
+  box-sizing: border-box;
+  background: #2d2d2d;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 98%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-size: 10px;
+  letter-spacing: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.cv__content-title--right {
+  box-shadow: none;
+  border: 0;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  font-size: 15px;
+  letter-spacing: 5px;
+  border-bottom: 1px solid gray;
+  border-radius: 0;
+  color: #ccf2ff;
+
+  margin: 0 auto;
+}
+
+.cv__content-title--right__icon {
+  font-size: 12px;
+  color: #ccf2ff;
+  margin-top: -2px;
+  margin-right: 10px;
+}
+
+.cv__right-col__education__content,
+.cv__right-col__tecnical-skills__content {
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.cv__table {
+  width: 100%;
+}
+
+.cv__table td {
+  padding: 5px 0;
+  font-size: 10px;
+}
+
+.cv__table td:nth-child(1) {
+  width: 30%;
+  font-weight: bold;
+}
+
+.cv__table td:nth-child(1) i {
+  margin-right: 5px;
+}
+
+.progress {
+  height: 0.25rem !important;
+  background: gray !important;
+}
+
+.progress .progress-bar {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.cv__right-col {
+  background: #2d2d2d;
+  width: 75%;
+  height: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+
+  float: right;
+}
+
+.cv__right-col__expericence__item {
+  color: white;
+}
+
+.cv__right-col__expericence__item a {
+  text-decoration: none !important;
+  color: #ccf2ff;
+  transition: 0.2s;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.cv__right-col__expericence__item ul {
+  padding-left: 35px;
+}
+
+.cv__right-col__expericence__item a:hover {
+  color: #f2c97e;
+}
+
+.cv__content-title--right__icon--education,
+.cv__content-title--right__text--education {
+  color: #ccf2ff;
+}
+
+.cv__content-title--right__icon--technical,
+.cv__content-title--right__text--technical {
+  color: lightcoral;
+}
+
+.cv__content-title--right__icon--experience {
+  color: gold;
+}
+
+.cv__content-title--right__text--experience {
+  color: lightgreen;
+}
+
+.cv__content-title--right__icon--activities,
+.cv__content-title--right__text--activities {
+  color: #f2c97e;
+}
+
+.cv__content-title--right__icon--interests,
+.cv__content-title--right__text--interests {
+  color: lightyellow;
+}
+
+.cv__left-col__activities {
+  color: white;
+}
+
+.cv__right-col__interests {
+  color: white;
+}
+
+.cv__mysql-icon {
+  width: 12px;
+  margin-right: 3px;
+  margin-left: -1px;
+}
+
+.cv__jquery-icon {
+  width: 9px;
+  margin-right: 5px;
+}
+
+.cv__html5-icon {
+  color: orange;
+}
+
+.cv__css3-icon {
+  color: #039be5;
+}
+
+.cv__bootstrap-icon {
+  color: darkorchid;
+}
+
+.cv__react-icon {
+  color: #ccf2ff;
+}
+
+.cv__angular-icon {
+  color: red;
+}
+
+.cv__nodejs-icon {
+  color: yellowgreen;
+}
+
+.cv__mongodb-icon {
+  color: limegreen;
+}
