@@ -5,7 +5,7 @@ body {
   box-sizing: border-box;
   font-size: 14px;
   font-family: "Quicksand", sans-serif !important;
-  background: url("../assets/images/bg.jpg");
+  background: url("https://appnet.edu.vn/wp-content/uploads/2018/11/c0f1bc676c9e8cc0d58f.png");
   background-size: 100% 100%;
   background-position: center center;
   background-attachment: fixed;
@@ -13,7 +13,7 @@ body {
 
 .cv__container {
   background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(1px);
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
@@ -136,7 +136,7 @@ body {
 .cv__content-title--left,
 .cv__content-title--right {
   font-weight: bold;
-  border-left: 0.28rem solid orange;
+  border-left: 0.28rem solid yellowgreen;
   box-sizing: border-box;
   background: #2d2d2d;
   color: white;
@@ -205,7 +205,7 @@ body {
 }
 
 .progress .progress-bar {
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
 
 .cv__right-col {
@@ -247,26 +247,29 @@ body {
 
 .cv__content-title--right__icon--technical,
 .cv__content-title--right__text--technical {
-  color: orange;
+  /* color: orange; */
+  color: yellowgreen;
 }
 
 .cv__content-title--right__icon--experience {
-  color: gold;
+  color: yellowgreen;
 }
 
 .cv__content-title--right__text--experience {
-  color: palegoldenrod;
+  /* color: palegoldenrod; */
+  color: yellowgreen;
 }
 
 .cv__content-title--right__icon--activities,
 .cv__content-title--right__text--activities {
   /* color: #f2c97e; */
-  color: lightgreen;
+  color: yellowgreen;
 }
 
 .cv__content-title--right__icon--interests,
 .cv__content-title--right__text--interests {
-  color: skyblue;
+  /* color: skyblue; */
+  color: yellowgreen;
 }
 
 .cv__left-col__activities {
