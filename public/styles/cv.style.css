@@ -3,33 +3,39 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif !important;
+  background: url("../assets/images/bg.jpg");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 .cv__container {
-  background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
 
-  font-size: 11px;
-  padding: 20px;
+  font-size: 0.78rem;
   box-sizing: border-box;
 }
 
 .cv {
   background: white;
   width: 55vw;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   display: table;
   margin: 0 auto;
 
-  -webkit-animation: DownInCV 0.4s ease-out;
-  animation: DownInCV 0.4s ease-out;
+  -webkit-animation: DownInCV 0.4s ease;
+  animation: DownInCV 0.4s ease;
 }
 
 @keyframes DownInCV {
   from {
-    margin-top: -2000px;
+    margin-top: -400vh;
   }
   to {
     margin-top: 0;
@@ -38,11 +44,11 @@ body {
 
 .cv__content-wrapper,
 .cv__content-wrapper--experience {
-  padding: 15px;
+  padding: 1.07rem;
 }
 
 .cv__content-wrapper--experience {
-  padding-left: 5px;
+  padding-left: 0.36rem;
 }
 
 .cv__left-col {
@@ -56,8 +62,8 @@ body {
 
 .cv__left-col__main-info__avatar {
   width: 100%;
-  height: 120px;
-  padding-top: 50px;
+  height: 8.6rem;
+  padding-top: 3.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,27 +75,27 @@ body {
 }
 
 .cv__left-col__personal-info__profile {
-  font-size: 10px;
+  font-size: 0.71rem;
 }
 
 .cv__left-col__personality ul,
 .cv__left-col__soft-skills ul {
-  line-height: 22px;
+  line-height: 1.57rem;
   list-style: none;
-  padding: 10px;
-  padding-top: 12px;
+  padding: 0.71rem;
+  padding-top: 0.86rem;
 }
 
 .cv__left-col__personality li,
 .cv__left-col__soft-skills li {
   display: inline-block;
-  padding: 1px 6px;
-  margin: 3px 3px 3px 0;
-  background: #e6e6e6;
-  font-size: 9.5px;
-  letter-spacing: 1px;
+  padding: 0.07rem 0.43rem;
+  margin: 0.21rem 0.21rem 0.21rem 0;
+  background: #f2f2f2;
+  font-size: 0.68rem;
+  letter-spacing: 0.07rem;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 1.07rem;
   transition: 0.2s;
 }
 
@@ -99,9 +105,10 @@ body {
 }
 
 .cv__fullname {
-  letter-spacing: 2px;
-  font-size: 13px;
+  letter-spacing: 0.11rem;
+  font-size: 0.93rem;
   text-align: center;
+  font-weight: bold;
 }
 
 .cv__applied-position {
@@ -109,26 +116,27 @@ body {
 }
 
 .cv__school-name {
-  font-size: 13px;
-  letter-spacing: 3px;
+  font-size: 0.93rem;
+  letter-spacing: 0.21rem;
   font-weight: bold;
   color: white;
 }
 
 .cv__content-icon {
-  margin-right: 7px;
+  margin-right: 0.5rem;
   color: rgba(0, 0, 0, 0.6);
 }
 
 .cv__content-label {
   font-weight: bold;
   color: rgba(0, 0, 0, 0.7);
-  font-size: 10px;
+  font-size: 0.71rem;
 }
 
 .cv__content-title--left,
 .cv__content-title--right {
-  border-left: 4px solid orange;
+  font-weight: bold;
+  border-left: 0.28rem solid orange;
   box-sizing: border-box;
   background: #2d2d2d;
   color: white;
@@ -136,12 +144,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 35px;
+  height: 2.5rem;
   width: 98%;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  font-size: 10px;
-  letter-spacing: 3px;
+  border-top-right-radius: 2.14rem;
+  border-bottom-right-radius: 2.14rem;
+  font-size: 0.71rem;
+  letter-spacing: 0.21rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -150,9 +158,9 @@ body {
   border: 0;
   box-sizing: border-box;
   justify-content: flex-start;
-  font-size: 15px;
-  letter-spacing: 5px;
-  border-bottom: 1px solid gray;
+  font-size: 1.07rem;
+  letter-spacing: 0.36rem;
+  border-bottom: 0.07rem solid gray;
   border-radius: 0;
   color: #ccf2ff;
 
@@ -160,17 +168,17 @@ body {
 }
 
 .cv__content-title--right__icon {
-  font-size: 12px;
+  font-size: 0.86rem;
   color: #ccf2ff;
-  margin-top: -2px;
-  margin-right: 10px;
+  margin-top: -0.14rem;
+  margin-right: 0.71rem;
 }
 
 .cv__right-col__education__content,
 .cv__right-col__tecnical-skills__content {
   color: white;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 0.36rem;
+  padding-right: 0.36rem;
 }
 
 .cv__table {
@@ -178,17 +186,17 @@ body {
 }
 
 .cv__table td {
-  padding: 5px 0;
-  font-size: 10px;
+  padding: 0.36rem 0;
+  font-size: 0.71rem;
 }
 
 .cv__table td:nth-child(1) {
   width: 30%;
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .cv__table td:nth-child(1) i {
-  margin-right: 5px;
+  width: 1.28rem;
 }
 
 .progress {
@@ -197,14 +205,15 @@ body {
 }
 
 .progress .progress-bar {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 }
 
 .cv__right-col {
   background: #2d2d2d;
   width: 75%;
   height: 100%;
-  padding: 40px;
+  padding: 2.86rem;
+  padding-bottom: 1.43rem;
   box-sizing: border-box;
 
   float: right;
@@ -216,28 +225,29 @@ body {
 
 .cv__right-col__expericence__item a {
   text-decoration: none !important;
-  color: #ccf2ff;
+  color: lightgoldenrodyellow;
+  font-weight: bold;
   transition: 0.2s;
-  font-size: 10px;
-  letter-spacing: 1px;
+  font-size: 0.71rem;
+  letter-spacing: 0.07rem;
 }
 
 .cv__right-col__expericence__item ul {
-  padding-left: 35px;
+  padding-left: 2.5rem;
 }
 
 .cv__right-col__expericence__item a:hover {
-  color: #f2c97e;
+  color: orange;
 }
 
 .cv__content-title--right__icon--education,
 .cv__content-title--right__text--education {
-  color: #ccf2ff;
+  color: yellowgreen;
 }
 
 .cv__content-title--right__icon--technical,
 .cv__content-title--right__text--technical {
-  color: lightcoral;
+  color: orange;
 }
 
 .cv__content-title--right__icon--experience {
@@ -245,17 +255,18 @@ body {
 }
 
 .cv__content-title--right__text--experience {
-  color: lightgreen;
+  color: palegoldenrod;
 }
 
 .cv__content-title--right__icon--activities,
 .cv__content-title--right__text--activities {
-  color: #f2c97e;
+  /* color: #f2c97e; */
+  color: lightgreen;
 }
 
 .cv__content-title--right__icon--interests,
 .cv__content-title--right__text--interests {
-  color: lightyellow;
+  color: skyblue;
 }
 
 .cv__left-col__activities {
@@ -267,14 +278,14 @@ body {
 }
 
 .cv__mysql-icon {
-  width: 12px;
-  margin-right: 3px;
-  margin-left: -1px;
+  width: 0.78rem;
+  margin-right: 0.57rem;
+  margin-left: -0.07rem;
 }
 
 .cv__jquery-icon {
   width: 9px;
-  margin-right: 5px;
+  margin-right: 0.65rem;
 }
 
 .cv__html5-icon {
@@ -283,6 +294,11 @@ body {
 
 .cv__css3-icon {
   color: #039be5;
+}
+
+.cv__scss-icon {
+  color: lightpink;
+  margin-right: 0;
 }
 
 .cv__bootstrap-icon {
@@ -303,4 +319,44 @@ body {
 
 .cv__mongodb-icon {
   color: limegreen;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+
+  .cv {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 14px;
+  }
+
+  .cv {
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+
+  .cv {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  html {
+    font-size: 9px;
+  }
+
+  .cv {
+    width: 100vw;
+  }
 }
