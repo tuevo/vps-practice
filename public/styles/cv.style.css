@@ -284,8 +284,9 @@ body {
 }
 
 .cv__jquery-icon {
-  width: 9px;
+  width: 8px;
   margin-right: 0.65rem;
+  margin-top: -0.3rem;
 }
 
 .cv__html5-icon {
