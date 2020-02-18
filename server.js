@@ -6,12 +6,8 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.render('index');
-});
-
-app.get('/cv', (req, res) => {
   res.render('cv');
-})
+});
 
 app.listen(port, err => {
   if (err)
