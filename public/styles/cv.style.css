@@ -240,7 +240,7 @@ body {
   width: 75%;
   height: 100%;
   padding: 2.86rem;
-  padding-bottom: 1.43rem;
+  padding-bottom: 0;
   box-sizing: border-box;
 
   float: right;
@@ -305,6 +305,11 @@ body {
 
 .cv__right-col__interests {
   color: white;
+}
+
+.cv__left-col__activities ul,
+.cv__right-col__interests ul {
+  padding-left: 1.75rem;
 }
 
 .cv__mysql-icon {
