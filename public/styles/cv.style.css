@@ -13,7 +13,7 @@ body {
 
 .cv__container {
   background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(3px);
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
@@ -44,8 +44,15 @@ body {
 }
 
 .cv__content-wrapper,
-.cv__content-wrapper--experience {
+.cv__content-wrapper--experience,
+.cv__content-wrapper--activities,
+.cv__content-wrapper--interests {
   padding: 1.07rem;
+}
+
+.cv__content-wrapper--activities,
+.cv__content-wrapper--interests {
+  padding-left: 0.3rem;
 }
 
 .cv__content-wrapper--experience {
@@ -68,7 +75,7 @@ body {
 .cv__left-col__main-info__avatar__wallpaper {
   height: 8.57rem;
   width: 100%;
-  background: url("https://labsec.co.uk/wp-content/uploads/2018/10/program-code-on-screen.png");
+  background: url("https://images.all-free-download.com/images/graphiclarge/layered_colored_modern_background_vector_586999.jpg");
   background-size: 100% 100%;
   position: relative;
 }
@@ -85,14 +92,14 @@ body {
 .cv__left-col__main-info__avatar__image {
   position: absolute;
   width: 100%;
-  top: 65%;
-  left: 30%;
+  top: 70%;
+  left: 35%;
 }
 
 .cv__left-col__main-info__avatar__image img {
-  width: 40%;
+  width: 35%;
   border-radius: 50%;
-  border: 0.25rem solid white;
+  border: 0.3rem solid white;
 }
 
 .cv__left-col__main-info__profile {
@@ -264,7 +271,7 @@ body {
 }
 
 .progress .progress-bar {
-  background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 }
 
 .cv__right-col {
@@ -301,34 +308,31 @@ body {
 
 .cv__content-title--right__icon--education,
 .cv__content-title--right__text--education {
-  color: #ccf2ff;
+  color: orange;
 }
 
 .cv__content-title--right__icon--technical,
 .cv__content-title--right__text--technical {
-  /* color: orange; */
-  color: #ccf2ff;
+  color: orange;
 }
 
 .cv__content-title--right__icon--experience {
-  color: #ccf2ff;
+  color: orange;
 }
 
 .cv__content-title--right__text--experience {
-  /* color: palegoldenrod; */
-  color: #ccf2ff;
+  color: orange;
 }
 
 .cv__content-title--right__icon--activities,
 .cv__content-title--right__text--activities {
-  /* color: #f2c97e; */
-  color: #ccf2ff;
+  color: orange;
 }
 
 .cv__content-title--right__icon--interests,
 .cv__content-title--right__text--interests {
   /* color: skyblue; */
-  color: #ccf2ff;
+  color: orange;
 }
 
 .cv__left-col__activities {
@@ -341,7 +345,19 @@ body {
 
 .cv__left-col__activities ul,
 .cv__right-col__interests ul {
-  padding-left: 1.75rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.cv__technical-label {
+  padding: 0.07rem 0.43rem;
+  border: 0.070rem solid gray;
+  font-weight: bolder;
+  height: 0.71rem;
+  font-size: 0.6rem;
+  border-radius: 0.86rem;
+  margin-right: 0.36rem;
+  color: silver;
 }
 
 .cv__mysql-icon {
@@ -370,7 +386,7 @@ body {
 }
 
 .cv__bootstrap-icon {
-  color: darkorchid;
+  color: darkviolet;
 }
 
 .cv__react-icon {
@@ -378,7 +394,7 @@ body {
 }
 
 .cv__angular-icon {
-  color: red;
+  color: crimson;
 }
 
 .cv__nodejs-icon {
