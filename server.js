@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
   res.render('cv');
 });
 
+app.get('/ga', (req, res) => {
+  res.render('gg-analytics');
+})
+
 app.listen(port, err => {
   if (err)
     console.error(err);
