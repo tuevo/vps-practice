@@ -1,0 +1,7 @@
+.status--error {
+  color: crimson;
+}
+
+.status--success {
+  color: green;
+}

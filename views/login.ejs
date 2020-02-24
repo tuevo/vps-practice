@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+
+  <link rel="stylesheet" href="styles/login.style.css">
+
+</head>
+
+<body>
+
+  <form action="/login" method="post" id="frm-login">
+
+    <div>
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" autofocus>
+    </div>
+
+    <div>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password">
+    </div>
+
+    <div>
+      <button type="submit">Login</button>
+    </div>
+
+    <div>
+      <span id="login-alert"></span>
+    </div>
+
+  </form>
+
+  <script src="libs/jquery.min.js"></script>
+  <script src="js/login.js"></script>
+
+</body>
+
+</html>

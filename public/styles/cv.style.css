@@ -56,7 +56,7 @@ body {
 }
 
 .cv__content-wrapper--experience {
-  padding-left: 0.36rem;
+  padding-left: 0;
 }
 
 .cv__left-col {
@@ -75,7 +75,7 @@ body {
 .cv__left-col__main-info__avatar__wallpaper {
   height: 8.57rem;
   width: 100%;
-  background: url("https://images.all-free-download.com/images/graphiclarge/layered_colored_modern_background_vector_586999.jpg");
+  background: url("https://image.freepik.com/free-photo/desktop-source-code-wallpaper-by-computer-language-with-coding-programming_33771-593.jpg");
   background-size: 100% 100%;
   position: relative;
 }
@@ -92,8 +92,8 @@ body {
 .cv__left-col__main-info__avatar__image {
   position: absolute;
   width: 100%;
-  top: 70%;
-  left: 35%;
+  top: 66%;
+  left: 33%;
 }
 
 .cv__left-col__main-info__avatar__image img {
