@@ -35,8 +35,15 @@ mongoClient.connect(err => {
   });
 });
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
+  // const users = await findAllUsers();
+  // console.log(users);
+
   res.render('cv');
+});
+
+app.get('/widget', (req, res) => {
+  res.render('widget');
 });
 
 app.get('/login', (req, res) => {
@@ -125,7 +132,10 @@ app.get('/ga', (req, res) => {
   res.render('gg-analytics');
 });
 
-const findAllUsers = async () => await db.collection('users').find().toArray();
+const findAllUsers = async () => {
+  const users = await db.collection('users').find();
+  return users.toArray();
+}
 
 const findUserByUsername = async (username) => await db.collection('users').findOne({ username });
 

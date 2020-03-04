@@ -1,0 +1,11 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://i.pinimg.com/originals/5a/94/52/5a945274d7309bcaf233e1b46c7d25e0.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
