@@ -50,13 +50,11 @@ body {
   padding: 1.07rem;
 }
 
+.cv__content-wrapper--experience,
 .cv__content-wrapper--activities,
 .cv__content-wrapper--interests {
   padding-left: 0.3rem;
-}
-
-.cv__content-wrapper--experience {
-  padding-left: 0;
+  padding-right: 0.3rem;
 }
 
 .cv__left-col {
